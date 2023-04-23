@@ -93,6 +93,8 @@ const twoSum = (nums, target) => {
 } 
 twoSum(nums, target)
 
+//6ku
+
 
 
 
