@@ -299,7 +299,7 @@ return str.split("").reverse().join("").split(" ").reverse().join(" ");
 
 // When n is negative, just return an empty array. If n is higher than 254, just return an array of 254 elements.
 
-// Have fun!
+// Have fun!.
 
 function shadesOfGrey(n) {
   var shades = []
