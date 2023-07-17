@@ -144,3 +144,18 @@ finance(5000) --> 62537505000
 
 
   const finance = (n) => n * (n + 1) * (n + 2) / 2;
+
+
+//   "this" is an other problem
+
+//   After you've solved @priyankaherur's problem ( http://www.codewars.com/kata/this-is-a-problem/javascript ) you may try to solve this other one.
+
+// The problem:
+// Having created a function NamedOne which takes first & last names as parameters and returns an object with firstName, lastName and fullName ( = firstName + a space + lastName ) properties which should be all accessibles, we discovered that "accessible" also means "mutable".
+
+// If, for example, we've got a "NamedOne" like this :
+class NamedOne {
+  constructor(f, l) { this.firstName = f; this.lastName = l }
+  get fullName() { return this.firstName + ' ' + this.lastName }
+  set fullName(v) { if (/ /.test(v)) [this.firstName, this.lastName] = v.split(' ') }
+} 
