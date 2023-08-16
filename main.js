@@ -514,6 +514,7 @@ function getQuote(quotes, hero) {
     quotes[hero.match(/\d+/)[0]]
   );
 }
+//nice
 //Vowel Count
 // Return the number (count) of vowels in the given string.
 
