@@ -666,3 +666,13 @@ Note: String will have at least one element; words will always be separated by a
 function addLength(str) {
   return str.split(' ').map(word => `${word} ${word.length}`);
 }
+
+//All Inclusive?
+function containAllRots(str, arr) {
+  for (var i = 0; i < str.length; i++) {
+    if (arr.indexOf(str.slice(i) + str.slice(0, i)) === -1) {
+      return false;
+    }
+  }
+  return true;
+}
