@@ -705,3 +705,7 @@ function absentVowel(x) {
   if (!x.match(/o/)) return 3;
   if (!x.match(/u/)) return 4;
 }
+//all unique
+function hasUniqueChars(str) {
+  return new Set(str).size === str.length;
+}
