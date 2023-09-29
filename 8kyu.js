@@ -246,3 +246,6 @@ function squareSum(numbers){
     // i will be an integer. Double it and return it.
     return i * 2;
   }
+
+
+  //
