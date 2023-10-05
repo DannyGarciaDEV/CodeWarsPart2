@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "CodeWarsPart2",
+			"path": "."
+		},
+		{
+			"name": "CodeWars",
+			"path": "../CodeWars"
+		}
+	],
+	"settings": {}
+}
