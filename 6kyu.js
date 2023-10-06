@@ -427,3 +427,45 @@ function likes(names) {
     return `${names[0]}, ${names[1]}, and ${names.length - 2} others like this`;
   }
 }
+
+// Find the odd int
+// DESCRIPTION:
+// Given an array of integers, find the one that appears an odd number of times.
+
+// There will always be only one integer that appears an odd number of times.
+
+// Examples
+// [7] should return 7, because it occurs 1 time (which is odd).
+// [0] should return 0, because it occurs 1 time (which is odd).
+// [1,1,2] should return 2, because it occurs 1 time (which is odd).
+// [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
+// [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
+
+
+
+
+function findOdd(A) {
+  // Create an empty object to store the counts of each number
+  const numberCounts = {};
+
+  // Iterate through the input array A
+  for (const num of A) {
+    // If the number is not in the numberCounts object, add it with a count of 1
+    if (!(num in numberCounts)) {
+      numberCounts[num] = 1;
+    } else {
+      // If the number is already in the object, increment its count
+      numberCounts[num]++;
+    }
+  }
+
+  // Iterate through the object to find the first number with an odd count
+  for (const num in numberCounts) {
+    if (numberCounts[num] % 2 !== 0) {
+      return parseInt(num); // Return the number as an integer
+    }
+  }
+
+  // If no number with an odd count was found, return a message or value of your choice
+  return 'No number repeats an odd number of times';
+}
