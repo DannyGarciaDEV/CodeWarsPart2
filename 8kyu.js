@@ -684,3 +684,26 @@ for(let i = 1; i <= n; i++)
 function all( arr, fun ){
   return arr.every(fun)
 }
+
+
+
+console.log(averageGrade); // This will print the rounded
+
+
+// Get the mean of an array
+// It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
+
+// Return the average of the given array rounded down to its nearest integer.
+
+// The array will never be empty.
+
+function getAverage(marks){
+  if (marks.length === 0) {
+          return 0; // Return 0 for an empty array
+      }else{
+  
+      const total = marks.reduce((sum, currentValue) => sum + currentValue, 0);
+      const average = total / marks.length;
+      }
+      return Math.floor(average); // 
+    }
