@@ -729,4 +729,4 @@ function getAverage(marks){
         input.forEach((num) => num > 0 ? positiveNums++ : negativeNums += num);
       }
       return [positiveNums , negativeNums];
-  }
+  }//
