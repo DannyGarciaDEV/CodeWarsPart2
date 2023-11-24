@@ -23,4 +23,4 @@ function removeUrlAnchor(url) {
 console.log(removeUrlAnchor("www.codewars.com#about"));      // "www.codewars.com"
 console.log(removeUrlAnchor("www.codewars.com?page=1"));      // "www.codewars.com?page=1"
 console.log(removeUrlAnchor("www.example.com#section1"));     // "www.example.com"
-console.log(removeUrlAnchor("www.example.com?query#section2"));// "www.example.com?query"
+console.log(removeUrlAnchor("www.example.com?query#section2"));// "www.example.com?query".
