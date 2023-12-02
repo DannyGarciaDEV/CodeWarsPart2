@@ -4,4 +4,4 @@
 def dna_to_rna(dna):
     # Replace 'T' with 'U' using the str.replace() method
     rna = dna.replace('T', 'U')
-    return rna
+    return rna #returns
