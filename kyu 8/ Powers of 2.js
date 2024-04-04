@@ -15,3 +15,4 @@ function powersOfTwo(n){
     }
     return result;
   }
+  
