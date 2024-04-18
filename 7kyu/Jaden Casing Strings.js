@@ -13,3 +13,4 @@ String.prototype.toJadenCase = function () {
         return word.charAt(0).toUpperCase() + word.slice(1);
     }).join(' ');
 };
+//
