@@ -14,3 +14,4 @@ String.prototype.toJadenCase = function () {
     }).join(' ');
 };
 //
+//
