@@ -11,12 +11,3 @@
 
 
 
-def count_sheeps(sheep):
-    # Initialize a counter for the number of present sheep
-    count = 0
-    # Iterate through the list of sheep
-    for s in sheep:
-        # Check if the current value is True
-        if s is True:
-            count += 1
-    return count
