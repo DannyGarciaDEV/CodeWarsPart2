@@ -12,3 +12,6 @@ def remove_url_anchor(url):
         return url[:anchor_index]  # Return the substring before '#'
     else:
         return url  # Return the original URL if no '#' found
+
+
+#nice
