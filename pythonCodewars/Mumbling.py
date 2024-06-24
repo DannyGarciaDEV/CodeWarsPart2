@@ -6,3 +6,10 @@
 # accum("cwAt") -> "C-Ww-Aaa-Tttt"
 # The parameter of accum is a string which includes only letters from a..z and A..Z.
 
+def accum(st):
+    result = []
+    for i, char in enumerate(st):
+        # Repeat the character (i+1) times, capitalize the first character, and convert the rest to lowercase
+        result.append(char.upper() + char.lower() * i)
+    # Join the resulting list with hyphens
+    return '-'.join(result)
