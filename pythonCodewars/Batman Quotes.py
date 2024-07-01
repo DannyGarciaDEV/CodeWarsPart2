@@ -9,10 +9,7 @@
 
 # BatmanQuotes.getQuote(["I am vengeance. I am the night. I am Batman!", "Holy haberdashery, Batman!", "Let's put a smile on that faaaceee!"], "Rob1n") should output =>  "Robin: Holy haberdashery, Batman!
 # Hint: You are guaranteed that the number in the passed in string is placed somewhere after the first character of the string. The quotes either belong to "Batman", "Robin", or "Joker".
-
-
-    @staticmethod
-    def get_quote(quotes, hero):
+       def get_quote(quotes, hero):
         # Extract the index from the hero string
         index = int(''.join(filter(str.isdigit, hero)))
         
@@ -26,4 +23,4 @@
         quote = quotes[index]
         
         # Return the formatted string
-        return f"{correct_hero_name}: {quote}"
+        return f"{correct_hero_name}: {quote}" 
