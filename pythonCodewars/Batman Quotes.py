@@ -9,18 +9,19 @@
 
 # BatmanQuotes.getQuote(["I am vengeance. I am the night. I am Batman!", "Holy haberdashery, Batman!", "Let's put a smile on that faaaceee!"], "Rob1n") should output =>  "Robin: Holy haberdashery, Batman!
 # Hint: You are guaranteed that the number in the passed in string is placed somewhere after the first character of the string. The quotes either belong to "Batman", "Robin", or "Joker".
-       def get_quote(quotes, hero):
-        # Extract the index from the hero string
-        index = int(''.join(filter(str.isdigit, hero)))
-        
-        # Extract the position of the number
-        number_pos = next(i for i, c in enumerate(hero) if c.isdigit())
-        
-        # Correct the hero name by replacing the number with the correct letter
-        correct_hero_name = hero[:number_pos] + "i" + hero[number_pos+1:]
-        
-        # Retrieve the corresponding quote
-        quote = quotes[index]
-        
-        # Return the formatted string
-        return f"{correct_hero_name}: {quote}" 
+       
+ def get_quote(quotes, hero):
+    # Extract the numeric part of the hero's name
+    index = int(''.join(filter(str.isdigit, hero)))
+
+    # Find the position of the first digit in the hero's name
+    number_pos = next(i for i, c in enumerate(hero) if c.isdigit())
+
+    # Replace the digit in the hero's name with "i"
+    correct_hero_name = hero[:number_pos] + "i" + hero[number_pos+1:]
+
+    # Get the quote corresponding to the extracted index
+    quote = quotes[index]
+
+    # Return the formatted string
+    return f"{correct_hero_name}: {quote}"
