@@ -3,7 +3,5 @@
 
 # Example
 # ['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
-
 def smash(words):
-    return ""
-    
+    return ' '.join(words)
