@@ -6,4 +6,4 @@
 # None of the arrays will be empty, so you don't have to worry about that!
 
 def remove_every_other(my_list):
-    pass
+    return my_list[::2]
