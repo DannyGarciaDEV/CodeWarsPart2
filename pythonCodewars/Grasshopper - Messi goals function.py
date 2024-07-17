@@ -9,3 +9,6 @@
 # Note: the input will always be valid.
 
 # For example:
+
+def goals(laLiga, copaDelRey, championsLeague):
+    return laLiga + copaDelRey + championsLeague
