@@ -7,3 +7,17 @@
 
 # Input: 123456789 Output: 987654321
 
+def descending_order(num):
+    # Convert the number to a string to manipulate the digits
+    num_str = str(num)
+    
+    # Sort the digits in descending order
+    sorted_digits = sorted(num_str, reverse=True)
+    
+    # Join the sorted digits back into a string
+    sorted_num_str = ''.join(sorted_digits)
+    
+    # Convert the string back to an integer
+    sorted_num = int(sorted_num_str)
+    
+    return sorted_num
