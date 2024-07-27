@@ -17,4 +17,11 @@
 # Note: The input will always be valid (a positive integer)
 
 def make_move(sticks):
-    return
+    if sticks % 4 == 0:
+        return 3
+    elif sticks % 4 == 1:
+        return 1
+    elif sticks % 4 == 2:
+        return 2
+    else:
+        return 3
