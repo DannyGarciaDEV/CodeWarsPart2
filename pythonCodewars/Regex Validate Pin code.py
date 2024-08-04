@@ -9,4 +9,9 @@
 
 
 def validate_pin(pin):
-    #return true or false
+    # Check if the pin length is either 4 or 6
+    if len(pin) == 4 or len(pin) == 6:
+        # Check if all characters in the pin are digits
+        if pin.isdigit():
+            return True
+    return False
