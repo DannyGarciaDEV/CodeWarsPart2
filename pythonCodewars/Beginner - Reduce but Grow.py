@@ -2,5 +2,8 @@
 
 # [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 
+from functools import reduce
+import operator
+
 def grow(arr):
-    pass
+    return reduce(operator.mul, arr)
