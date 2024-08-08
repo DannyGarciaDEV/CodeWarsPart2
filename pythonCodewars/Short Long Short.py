@@ -9,4 +9,13 @@
 # ("22", "1") --> "1221"
 
 def solution(a, b):
-    pass
+    # Determine which string is shorter
+    if len(a) < len(b):
+        short = a
+        long = b
+    else:
+        short = b
+        long = a
+    
+    # Return the concatenated result
+    return short + long + short
