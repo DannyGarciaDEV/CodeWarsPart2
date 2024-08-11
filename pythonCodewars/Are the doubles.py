@@ -27,3 +27,14 @@
   
 #   double_check("a!@€£#$%^&*()_-+=}]{[|\"':;?/>.<,~")
 #   #returns False
+
+def double_check(strng):
+    # Convert the string to lowercase for case insensitivity
+    strng = strng.lower()
+    
+    # Iterate through the string to check for double characters
+    for i in range(len(strng) - 1):
+        if strng[i] == strng[i + 1]:
+            return True
+    
+    return False
