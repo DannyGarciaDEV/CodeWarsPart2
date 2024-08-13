@@ -4,3 +4,7 @@
 # n = 0  ==> [1]        # [2^0]
 # n = 1  ==> [1, 2]     # [2^0, 2^1]
 # n = 2  ==> [1, 2, 4]  # [2^0, 2^1, 2^2]
+
+def powers_of_two(n):
+    # Generate a list of powers of 2 from 0 to n
+    return [2**i for i in range(n + 1)]
