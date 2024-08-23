@@ -23,6 +23,13 @@
 public class SumArray {
 
   public static double sum(double[] numbers) {
-    return 0.0;
+    double sum = 0;
+    
+    // Iterate through the array and add each element to the sum
+    for (double number : numbers) {
+      sum += number;
+    }
+    
+    return sum;
   }
 }
