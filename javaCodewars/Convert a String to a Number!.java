@@ -10,3 +10,12 @@
 // "605"  --> 605
 // "1405" --> 1405
 // "-7" --> -7
+
+
+Copy code
+public class StringToNumber {
+
+  public static int stringToNumber(String str) {
+    return Integer.parseInt(str);
+  }
+}
