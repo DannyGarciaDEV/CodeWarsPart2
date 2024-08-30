@@ -6,3 +6,13 @@
 
 // "Hello World" --> "World Hello"
 // "Hi There." --> "There. Hi"
+
+public class Kata
+{
+    public static string Reverse(string text)
+    {
+        char[] charArray = text.ToCharArray();
+        Array.Reverse(charArray);
+        return new string(charArray);
+    }
+}
