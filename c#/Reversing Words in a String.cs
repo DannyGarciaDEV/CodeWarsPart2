@@ -6,13 +6,17 @@
 
 // "Hello World" --> "World Hello"
 // "Hi There." --> "There. Hi"
+using System;
+using System.Linq;
 
 public class Kata
 {
     public static string Reverse(string text)
     {
-        char[] charArray = text.ToCharArray();
-        Array.Reverse(charArray);
-        return new string(charArray);
+        // Split the input string by spaces into an array of words
+        string[] words = text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        
+        // Reverse the array of words and join them back into a single string
+        return string.Join(" ", words.Reverse());
     }
 }
