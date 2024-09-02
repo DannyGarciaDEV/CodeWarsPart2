@@ -11,3 +11,24 @@
 // When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
 
 // Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
+
+using System;
+
+public class Kata
+{
+    public static string HowMuchILoveYou(int nb_petals)
+    {
+        // List of phrases
+        string[] phrases = {
+            "I love you",
+            "a little",
+            "a lot",
+            "passionately",
+            "madly",
+            "not at all"
+        };
+
+        // Determine the correct phrase based on the number of petals
+        return phrases[(nb_petals - 1) % phrases.Length];
+    }
+}
