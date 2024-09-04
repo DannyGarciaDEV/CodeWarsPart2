@@ -4,3 +4,14 @@
 
 // 1: -1
 // 14: -14
+
+using System;
+
+public class Kata
+{
+    public static int Opposite(int number)
+    {
+        // Return the additive inverse of the given number
+        return -number;
+    }
+}
