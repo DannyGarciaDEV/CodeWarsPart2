@@ -13,7 +13,10 @@ public class Kata
 {
     public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
     {
-        //Insert brain here
-        return false;
+        // Calculate the average score of the class
+        double average = (double)ClassPoints.Sum() / ClassPoints.Length;
+
+        // Compare your score to the class average
+        return YourPoints > average;
     }
 }
