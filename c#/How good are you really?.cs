@@ -9,6 +9,8 @@
 // Note:
 // Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
 
+using System.Linq;
+
 public class Kata
 {
     public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
