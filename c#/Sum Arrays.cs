@@ -9,3 +9,22 @@
 
 // Input: [-2.398]
 // Output: -2.398
+
+public class Kata
+{
+    public static double SumArray(double[] array)
+    {
+        if (array == null || array.Length == 0)
+        {
+            return 0;
+        }
+
+        double sum = 0;
+        foreach (double num in array)
+        {
+            sum += num;
+        }
+
+        return sum;
+    }
+}
