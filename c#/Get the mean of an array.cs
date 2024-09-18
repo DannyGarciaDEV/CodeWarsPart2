@@ -8,10 +8,15 @@
 // using System.Collections.Generic;
 // using System;
 
-// public class Kata
-// {
-//   public static int GetAverage(int[] marks)
-//   {
-//     // ...
-//   }
-// }
+using System.Linq;
+using System.Collections.Generic;
+using System;
+
+public class Kata
+{
+  public static int GetAverage(int[] marks)
+  {
+    // Sum all the marks and divide by the number of marks to get the average
+    return marks.Sum() / marks.Length;
+  }
+}
