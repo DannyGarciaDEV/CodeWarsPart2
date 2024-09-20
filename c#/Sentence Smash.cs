@@ -7,6 +7,7 @@ public class Kata
 {
   public static string Smash(string[] words)
   {
-    // Smash words
+    // Join the array of words with a single space between each
+    return string.Join(" ", words);
   }
 }
