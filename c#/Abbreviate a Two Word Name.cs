@@ -13,6 +13,10 @@ public class Kata
 {
   public static string AbbrevName(string name)
   {
-    return "";
+    // Split the name into two parts
+    var names = name.Split(' ');
+    
+    // Take the first character of each name and capitalize it, then join with a dot
+    return $"{char.ToUpper(names[0][0])}.{char.ToUpper(names[1][0])}";
   }
 }
