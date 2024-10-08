@@ -5,5 +5,6 @@
 // "www.codewars.com?page=1" -->"www.codewars.com?page=1"
 
 function removeUrlAnchor(url){
-    // TODO: complete
+    return url.split('#')[0];
   }
+  
