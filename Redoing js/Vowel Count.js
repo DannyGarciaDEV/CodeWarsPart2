@@ -5,7 +5,6 @@
 // The input string will only consist of lower case letters and/or spaces.
 
 function getCount(str) {
-    return 0;
-    
-    
+    // Use a regular expression to match vowels and return the length of the matches
+    return (str.match(/[aeiou]/g) || []).length;
   }
