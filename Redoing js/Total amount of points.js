@@ -17,7 +17,20 @@
 // 0 <= x <= 4
 // 0 <= y <= 4
 
-
 function points(games) {
-    return 0
+    let totalPoints = 0;
+    
+    games.forEach(game => {
+      const [x, y] = game.split(":").map(Number);
+      
+      if (x > y) {
+        totalPoints += 3; // Win
+      } else if (x === y) {
+        totalPoints += 1; // Tie
+      }
+      // No points added for a loss (x < y)
+    });
+    
+    return totalPoints;
   }
+  
