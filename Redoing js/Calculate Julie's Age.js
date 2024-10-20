@@ -12,6 +12,9 @@
 
 // Do not concern yourself with the imperfections inherent in dividing by floating point numbers, as your answer will be rounded. Also, for the sake of simplicity, Julie is never the same age as her brother.
 
-function age(x, y){
-    //your code here
- }
+function age(x, y) {
+    let brotherAge = x / (y - 1);
+    let julieAge = brotherAge + x;
+    return Math.round(julieAge);
+  }
+  
