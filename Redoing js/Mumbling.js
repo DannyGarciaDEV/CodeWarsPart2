@@ -7,5 +7,10 @@
 // The parameter of accum is a string which includes only letters from a..z and A..Z.
 
 function accum(s) {
-	// your code
-}
+    let letters = s.toLowerCase().split('');
+    for (let i = 0; i < letters.length; i++) {
+      letters[i] = letters[i].toUpperCase() + letters[i].repeat(i);
+    }
+    let result = letters.join('-');
+    return result;
+  }
