@@ -9,3 +9,9 @@
 // ]
 
 // getNames(data) // should return ['Joe', 'Bill', 'Kate']
+
+function getNames(data){
+    console.log(data.name,
+    data.age);
+   
+  }
