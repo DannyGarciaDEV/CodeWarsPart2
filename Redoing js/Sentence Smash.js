@@ -15,3 +15,21 @@
 // Disclaimer
 // This is for beginners so we want to test basic loops and string manipulation. Advanced users should easily be able to do this in one line.
 
+function smash(words) {
+    // Initialize an empty string to hold the sentence
+    let sentence = '';
+  
+    // Loop through each word in the array
+    for (let i = 0; i < words.length; i++) {
+      // Add the word to the sentence
+      sentence += words[i];
+      
+      // Add a space after each word except the last one
+      if (i < words.length - 1) {
+        sentence += ' ';
+      }
+    }
+  
+    return sentence;
+  }
+  
