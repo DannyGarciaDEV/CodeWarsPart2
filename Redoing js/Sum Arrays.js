@@ -9,3 +9,17 @@
 
 // Input: [-2.398]
 // Output: -2.398
+
+function sum(numbers) {
+    // Initialize a variable to store the total sum
+    let total = 0;
+    
+    // Loop through each number in the array and add it to total
+    for (let i = 0; i < numbers.length; i++) {
+      total += numbers[i];
+    }
+    
+    // Return the final total
+    return total;
+  }
+  
