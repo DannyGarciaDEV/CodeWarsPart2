@@ -4,3 +4,11 @@
 // highAndLow("1 2 3 4 5"); // return "5 1"
 // highAndLow("1 2 -3 4 5"); // return "5 -3"
 // highAndLow("1 9 3 4 -5"); // return "9 -5"
+function highAndLow(numbers){
+    let newArray = numbers.split(" ").map(Number)
+    console.log(newArray)
+      let max = Math.max(...newArray)
+      let min = Math.min(...newArray)
+      console.log(max, min)
+      return `${max} ${min}`
+    }
