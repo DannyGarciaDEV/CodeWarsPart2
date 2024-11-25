@@ -8,6 +8,12 @@
 // s = 1
 
 // result = 61000
-function past(h, m, s){
-    //#Happy Coding! ^_^
-  }
+function past(h, m, s) {
+    // Convert hours, minutes, and seconds to milliseconds
+    const hoursToMs = h * 60 * 60 * 1000;
+    const minutesToMs = m * 60 * 1000;
+    const secondsToMs = s * 1000;
+
+    // Sum them up
+    return hoursToMs + minutesToMs + secondsToMs;
+}
