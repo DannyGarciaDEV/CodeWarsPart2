@@ -6,5 +6,12 @@
 // # 110 is not a vampire number since there are three 1's in the
 // # multiplicands, but only two 1's in the product
 function vampireTest(a, b) {
-    return false; // fix me
-  }
+    const product = a * b;
+
+    // Convert all numbers to strings and sort their digits
+    const productDigits = product.toString().split('').sort().join('');
+    const factorsDigits = (a.toString() + b.toString()).split('').sort().join('');
+
+    // Compare sorted strings
+    return productDigits === factorsDigits;
+}
