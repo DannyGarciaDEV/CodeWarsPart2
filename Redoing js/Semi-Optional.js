@@ -7,3 +7,10 @@
 // We would then expect the following statement to be true:
 
 // wrapper_obj["value"] == "my_wrapped_string"
+
+function wrap(value) {
+    return
+    {
+      value:value 
+    };
+  }
