@@ -8,9 +8,9 @@
 
 // wrapper_obj["value"] == "my_wrapped_string"
 
-function wrap(value) {
-    return
-    {
-      value:value 
-    };
-  }
+    function wrap(value) {
+        return {
+          value: value
+        };
+    }
+  
