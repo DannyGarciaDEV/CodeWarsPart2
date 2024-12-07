@@ -4,6 +4,8 @@
 
 // [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
+
 function sumTwoSmallestNumbers(numbers) {  
-    //Code here
+    const [smallest, secondSmallest] = numbers.sort((a, b) => a - b).slice(0, 2);
+    return smallest + secondSmallest;
   }
