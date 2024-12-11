@@ -3,3 +3,9 @@
 // Example: (Input --> Output)
 
 // "Dermatoglyphics" --> true
+
+function isIsogram(str) {
+    const lowerCased = str.toLowerCase();
+    const uniqueLetters = new Set(lowerCased);
+    return uniqueLetters.size === lowerCased.length;
+  }
