@@ -9,7 +9,7 @@ function isIsogram(str) {
     const uniqueLetters = new Set(lowerCased);
     return uniqueLetters.size === lowerCased.length;
   }
-
+////
   function isIsogram(str){
 	return new Set(str.toUpperCase()).size == str.length;
 }///
