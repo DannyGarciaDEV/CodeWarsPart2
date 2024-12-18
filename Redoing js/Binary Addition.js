@@ -6,6 +6,10 @@
 
 // 1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
 // 5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
-function addBinary(a,b) {
-
+function addBinary(a, b) {
+    // Add the two numbers
+    const sum = a + b;
+    
+    // Convert the sum to binary and return as a string
+    return sum.toString(2);
 }
