@@ -13,3 +13,7 @@ function addBinary(a, b) {
     // Convert the sum to binary and return as a string
     return sum.toString(2);
 }
+
+function addBinary(a,b){
+    return (a+b).toString(2)
+  }
