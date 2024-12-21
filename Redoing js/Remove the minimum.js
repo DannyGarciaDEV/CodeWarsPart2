@@ -12,3 +12,15 @@
 // * Input: [1,2,3,4,5], output = [2,3,4,5]
 // * Input: [5,3,2,1,4], output = [5,3,2,4]
 // * Input: [2,2,1,2,1], output = [2,2,2,1]
+function removeSmallest(numbers) {
+    if (numbers.length === 0) return []; // If the input array is empty, return an empty array
+
+    // Find the smallest value in the array
+    const min = Math.min(...numbers);
+
+    // Find the index of the smallest value
+    const index = numbers.indexOf(min);
+
+    // Return a new array excluding the smallest value at its first occurrence
+    return numbers.slice(0, index).concat(numbers.slice(index + 1));
+}
