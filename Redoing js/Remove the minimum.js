@@ -24,3 +24,8 @@ function removeSmallest(numbers) {
     // Return a new array excluding the smallest value at its first occurrence
     return numbers.slice(0, index).concat(numbers.slice(index + 1));
 }
+
+function removeSmallest(numbers) {
+    let indexOfMin = numbers.indexOf(Math.min(...numbers));
+    return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+  }
