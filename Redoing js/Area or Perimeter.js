@@ -8,10 +8,10 @@
 // Note: for the purposes of this kata you will assume that it is a square if its length and width are equal, otherwise it is a rectangle.
 
 const areaOrPerimeter = function(l, w) {
-    // Check if it's a square
+    // Check if the polygon is a square
     if (l === w) {
-        return 4 * l; // Return perimeter of the square
+        return l * w; // Return the area for a square
     } else {
-        return l * w; // Return area of the rectangle
+        return 2 * (l + w); // Return the perimeter for a rectangle
     }
 };
