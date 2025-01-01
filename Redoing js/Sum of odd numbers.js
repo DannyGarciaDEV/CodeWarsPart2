@@ -14,3 +14,7 @@
 function rowSumOddNumbers(n) {
     return n ** 3;
 }
+
+function rowSumOddNumbers(n) {
+    return Math.pow(n, 3);
+  }
