@@ -12,3 +12,11 @@
 // -5,1,3 -> false
 // 0,2,3 -> false
 // 1,2,9 -> false 
+
+function isTriangle(a, b, c) {
+    // Check if all sides are greater than 0 and satisfy the triangle inequality
+    return a > 0 && b > 0 && c > 0 &&
+           a + b > c &&
+           a + c > b &&
+           b + c > a;
+  }
