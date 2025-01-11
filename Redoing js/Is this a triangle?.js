@@ -20,3 +20,5 @@ function isTriangle(a, b, c) {
            a + c > b &&
            b + c > a;
   }
+
+  var isTriangle = (a,b,c) => Math.max(a,b,c)<(a+b+c)/2
