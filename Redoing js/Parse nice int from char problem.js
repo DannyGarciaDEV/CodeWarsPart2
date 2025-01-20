@@ -8,3 +8,8 @@ function getAge(inputString) {
     // Extract the first character from the string and convert it to an integer
     return parseInt(inputString[0], 10);
 }
+
+
+function getAge(inputString){
+    return parseInt(inputString);
+  }
