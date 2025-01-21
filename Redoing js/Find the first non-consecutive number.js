@@ -19,3 +19,18 @@
 // Julia: nothing
 // Nim: none(int) (See options)
 
+function firstNonConsecutive(arr) {
+    // Return null if the array has fewer than 2 elements
+    if (arr.length < 2) return null;
+
+    // Loop through the array starting from the second element
+    for (let i = 1; i < arr.length; i++) {
+        // Check if the current element is not exactly 1 larger than the previous one
+        if (arr[i] !== arr[i - 1] + 1) {
+            return arr[i];
+        }
+    }
+
+    // If all elements are consecutive, return null
+    return null;
+}
