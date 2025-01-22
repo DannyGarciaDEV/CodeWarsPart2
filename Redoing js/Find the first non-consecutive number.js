@@ -34,3 +34,8 @@ function firstNonConsecutive(arr) {
     // If all elements are consecutive, return null
     return null;
 }
+
+function firstNonConsecutive (arr) {
+    return arr.find((n, i) => n - arr[i - 1] > 1) ?? null;
+  }
+  
