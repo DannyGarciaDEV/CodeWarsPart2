@@ -39,3 +39,4 @@ function firstNonConsecutive (arr) {
     return arr.find((n, i) => n - arr[i - 1] > 1) ?? null;
   }
   
+//
