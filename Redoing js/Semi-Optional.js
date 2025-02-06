@@ -16,4 +16,3 @@
   
 
     const wrap = value => ({value});
-41 similar code variations are grouped with this
