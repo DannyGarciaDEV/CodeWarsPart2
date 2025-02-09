@@ -8,10 +8,10 @@ function repeatStr(n, s) {
     return s.repeat(n);
 }
 
-
-function repeatStr(n, s){
-    for( let i = n; i < 100; i++){
-
-        return i
+function repeatStr(n, s) {
+    let result = '';
+    for (let i = 0; i < n; i++) {
+        result += s;  // Concatenate the string 's' to 'result'
     }
+    return result;  // Return the final repeated string
 }
