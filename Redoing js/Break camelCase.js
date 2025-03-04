@@ -16,3 +16,5 @@ function solution(string) {
       return (char === char.toUpperCase()) ? ` ${char}` : char;
     }).join('');
   }
+
+  //
