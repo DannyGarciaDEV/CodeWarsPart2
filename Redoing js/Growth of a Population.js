@@ -25,3 +25,7 @@
 // Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
 // There are no fractions of people. At the end of each year, the population count is an integer: 252.8 people round down to 252 persons.
+
+function nbYear(p0, percent, aug, p) {
+    // your code
+}
