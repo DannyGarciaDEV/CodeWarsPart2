@@ -14,6 +14,5 @@
 // Testing: [1, 0, 1, 1] ==> 11
 
 const binaryArrayToNumber = arr => {
-    // your code
-    return 0;
-  };
+    return parseInt(arr.join(''), 2);
+};
