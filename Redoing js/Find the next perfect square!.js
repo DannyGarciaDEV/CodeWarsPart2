@@ -10,7 +10,11 @@
 // 114 --> -1  #  because 114 is not a perfect square
 
 
-function findNextSquare(sq) {
-    // Return the next square if sq is a perfect square, -1 otherwise
+
+  function findNextSquare(sq) {
+    let root = Math.sqrt(sq);
+    if (Number.isInteger(root)) {
+        return Math.pow(root + 1, 2);
+    }
     return -1;
-  }
+}
