@@ -14,7 +14,7 @@
 
 // s="aaaxbbbbyyhwawiwjjjwwm"
 // printer_error(s) => "8/22"
-
 function printerError(s) {
-    // your code
-}
+    const errors = s.split('').filter(char => char < 'a' || char > 'm').length;
+    return `${errors}/${s.length}`;
+  }
