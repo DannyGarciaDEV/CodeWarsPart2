@@ -18,3 +18,13 @@ function printerError(s) {
     const errors = s.split('').filter(char => char < 'a' || char > 'm').length;
     return `${errors}/${s.length}`;
   }
+
+  function printerError(s) {
+    // your code
+    var count = 0;
+    for(var i = 0; i < s.length; i++) {
+      if (s[i] > "m") {
+        count++;
+      }
+    }
+    return count+"/"+s.length;
