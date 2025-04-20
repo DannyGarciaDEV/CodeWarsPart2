@@ -28,3 +28,4 @@ function printerError(s) {
       }
     }
     return count+"/"+s.length;
+}
