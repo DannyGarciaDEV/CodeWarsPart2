@@ -17,3 +17,19 @@
 // So there are 11 digits 1 for the squares of numbers between 0 and 25.
 // Note that 121 has twice the digit 1.
 
+function nbDig(n, d) {
+    let count = 0;
+    const digit = d.toString();
+  
+    for (let k = 0; k <= n; k++) {
+      const squareStr = (k * k).toString();
+      for (let char of squareStr) {
+        if (char === digit) {
+          count++;
+        }
+      }
+    }
+  
+    return count;
+  }
+  
