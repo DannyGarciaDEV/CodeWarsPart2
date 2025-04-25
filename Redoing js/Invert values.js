@@ -5,3 +5,6 @@
 // [] --> []
 // You can assume that all values are integers. Do not mutate the input array.
 
+function invert(array) {
+    return array.map(num => -num);
+  }
