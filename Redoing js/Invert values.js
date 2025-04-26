@@ -8,3 +8,7 @@
 function invert(array) {
     return array.map(num => -num);
   }
+
+  function invert(array) {
+    return array.map(i => 0 - i);
+ }
