@@ -8,3 +8,5 @@ function problem(x) {
     }
   }
   
+  const problem = x =>
+    Number.isFinite(x) ? x * 50 + 6 : `Error`;
