@@ -10,3 +10,12 @@ function problem(x) {
   
   const problem = x =>
     Number.isFinite(x) ? x * 50 + 6 : `Error`;
+
+
+  function problem(x){
+    if(isNaN(x) | x === ""){
+     return "Error";
+    } else {
+     return(x * 50)+6
+     }
+    }
